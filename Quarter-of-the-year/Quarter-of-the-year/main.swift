@@ -7,5 +7,7 @@
 
 import Foundation
 
-print("Hello, World!")
-
+func quarter(of month: Int) -> Int {
+    let division = Double(month) / Double(3);
+    return Int(division.rounded(.awayFromZero))
+}
