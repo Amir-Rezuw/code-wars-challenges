@@ -7,13 +7,13 @@
 
 import Foundation
 
-func expressionMatter(_ a: Int, _ b: Int, _ c: Int) -> Int {
-    var result: [Int] = []
-    result.append(a * (b + c))
-    result.append(a * b * c)
-    result.append(a + b * c)
-    result.append((a + b) * c)
-    result.append(a + b + c)
-    return result.max()!
+func century(_ year: Int) -> Int {
+    var pastCentury = Double(year) / 100.0
+    if floor(pastCentury) == pastCentury {
+        return Int(floor(pastCentury))
+    } else {
+        return Int(floor(pastCentury)) + 1
+    }
+ 
 }
-print(expressionMatter(1, 2, 3))
+print(century(1700))
