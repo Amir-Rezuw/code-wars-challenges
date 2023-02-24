@@ -20,3 +20,5 @@ func warnTheSheep(_ queue: [String]) -> String {
 }
 print(warnTheSheep(["sheep", "sheep", "sheep", "sheep", "sheep", "wolf", "sheep", "sheep"]))
 
+
+// Link to challenge:    https://www.codewars.com/kata/5c8bfa44b9d1192e1ebd3d15

@@ -14,3 +14,5 @@ func multi_table(_ number: Int) -> String {
 }
 
 print(multi_table(5))
+
+// Link to challenge:    https://www.codewars.com/kata/5a2fd38b55519ed98f0000ce

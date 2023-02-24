@@ -17,3 +17,5 @@ func century(_ year: Int) -> Int {
  
 }
 print(century(1700))
+
+// Link to challenge:    https://www.codewars.com/kata/5ae62fcf252e66d44d00008e

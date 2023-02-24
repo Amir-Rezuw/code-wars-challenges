@@ -19,3 +19,6 @@ func disemvowel(_ s: String) -> String {
     return result
 }
 print(disemvowel("Hello worldi"))
+
+
+// Link to challenge:    https://www.codewars.com/kata/52fba66badcd10859f00097e
