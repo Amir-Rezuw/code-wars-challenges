@@ -7,6 +7,7 @@
 
 import Foundation
 func sum_str(_ a:String, _ b:String) -> String {
-    return String("\(a) + \(b)".components(separatedBy: " + ").compactMap { Int($0) }.reduce(0) { $0 + $1 })
+    return String((Int(a) ?? 0) + (Int(b) ?? 0))
 }
 print(sum_str("", ""))
+// Link to the challenge : https://www.codewars.com/kata/5966e33c4e686b508700002d/train/swift
