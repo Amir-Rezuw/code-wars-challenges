@@ -8,15 +8,9 @@
 import Foundation
 
 func firstNonConsecutive (_ arr: [Int]) -> Int? {
-    var result: Int? = nil
-    for (index, item) in arr.enumerated() {
-        if index + 1 != arr.count {
-            if (item + 1 != arr[index + 1]) {
-                result = arr[index + 1]
-            }
-        }
-    }
-    return result
+    
+   
 }
 
-print(firstNonConsecutive([1,2,3,5,6,7,8]))
+print(firstNonConsecutive([-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 9]))
+// Link to the Kata: https://www.codewars.com/kata/58f8a3a27a5c28d92e000144/train/swift
