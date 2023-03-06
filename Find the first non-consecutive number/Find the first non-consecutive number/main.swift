@@ -9,7 +9,14 @@ import Foundation
 
 func firstNonConsecutive (_ arr: [Int]) -> Int? {
     
-   
+    for (index, item) in arr.enumerated() {
+        if index != 0{
+            if arr[index - 1] + 1 != arr[index]{
+                return arr[index]
+            }
+        }
+    }
+    return nil
 }
 
 print(firstNonConsecutive([-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 9]))
